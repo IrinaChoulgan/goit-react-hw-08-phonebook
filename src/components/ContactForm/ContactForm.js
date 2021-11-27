@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 import styles from './ContactForm.module.css';
-import operations from '../../redux/contacts/operations';
+import { addContacts } from '../../redux/contacts/operations';
 import { getContacts } from '../../redux/contacts/selectors';
 
 const ContactForm = ({ onAdd }) => {
@@ -37,7 +37,7 @@ const ContactForm = ({ onAdd }) => {
       )
     ) {
       alert(`${name} contact is already on your list`);
-    } else dispatch(operations.addContacts({ name, number }));
+    } else dispatch(addContacts({ name, number }));
 
     setContact(contact);
     resetForm();

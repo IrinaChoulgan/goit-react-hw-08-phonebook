@@ -1,4 +1,3 @@
-import styles from './components/ContactForm/ContactForm.module.css';
 import { Switch } from 'react-router';
 import AppBar from './components/AppBar/AppBar';
 import { useEffect, Suspense, lazy } from 'react';
