@@ -12,7 +12,7 @@ export default function UserMenu() {
   return (
     <div className={style.wrapper}>
       <img src={avatar} alt="" width="32" style={style.avatar} />
-      <span className={style.name}>Wellcome, {name}</span>
+      <span className={style.name}>Welcome, {name}</span>
       <button
         type="button"
         className={style.submit}
