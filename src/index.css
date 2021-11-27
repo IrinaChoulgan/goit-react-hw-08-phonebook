@@ -1,8 +1,6 @@
 body {
   margin: 0;
   line-height: 1.5;
-  padding-top: 50px;
-
   background-image: url('./components/ContactForm/bg.jpeg');
 }
 
